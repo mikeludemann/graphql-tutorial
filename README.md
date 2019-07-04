@@ -24,6 +24,12 @@ yarn start
 
 * Graphql
 
+If 'server' - directory not exist
+
+```
+curl https://codeload.github.com/howtographql/react-apollo/tar.gz/starter | tar -xz --strip=1 react-apollo-starter/server
+```
+
 ```
 cd server/
 yarn install
