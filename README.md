@@ -12,23 +12,31 @@ Install dependencies
 
 ## Starting - Frontend
 
-React App
+### React App
 
-* Location: localhost:4000
+* Location: localhost:3000
 
 ```
 yarn start
 ```
 
+or
+
+```
+npm start
+```
+
 ## Starting - Backend (Server)
 
-* Graphql
+### Graphql
 
-If 'server' - directory not exist
+* If 'server' - directory not exist
 
 ```
 curl https://codeload.github.com/howtographql/react-apollo/tar.gz/starter | tar -xz --strip=1 react-apollo-starter/server
 ```
+
+* Next steps
 
 ```
 cd server/
@@ -36,7 +44,7 @@ yarn install
 yarn prisma deploy
 ```
 
-### Information - Step 3
+#### Information - Step 3
 
 * Set up a new Prisma server or deploy to an existing server?
   * Demo server + MySQL database
