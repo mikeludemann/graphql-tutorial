@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
 import ListQuery from './components/ListQuery';
+import CreateLink from './components/CreateLink';
 
 function App() {
   return (
@@ -15,9 +16,20 @@ function App() {
         <List/>
       </section>
       <hr></hr>
+      <div className="text-center">
+        <h2>Graphql and Prisma)</h2>
+      </div>
+      <hr></hr>
       <section className="content--query">
-        <h2>Graphql and Prisma List</h2>
+        <h3>List (Query)</h3>
         <ListQuery/>
+      </section>
+      <hr></hr>
+      <section className="content--mutation">
+        <div className="container text-center">
+          <h3>Create Link (Mutation)</h3>
+          <CreateLink/>
+        </div>
       </section>
       <footer className="App-footer">
         (c) Copyright - Mike Ludemann

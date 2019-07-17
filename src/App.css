@@ -34,7 +34,8 @@
 }
 
 .content,
-.content--query {
+.content--query,
+.content--mutation {
   background-color: #fff;
   min-height: 25vh;
   display: flex;
