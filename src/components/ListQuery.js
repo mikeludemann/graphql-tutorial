@@ -3,21 +3,21 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import Link from './Link';
 
+const FEED_QUERY = gql`
+{
+  feed {
+    links {
+      id
+      createdAt
+      url
+      description
+    }
+  }
+}
+`
+
 class ListQuery extends Component {
   render() {
-    const FEED_QUERY = gql`
-      {
-        feed {
-          links {
-            id
-            createdAt
-            url
-            description
-          }
-        }
-      }
-    `
-
     const linkInformations = [
       {
         id: '1',
