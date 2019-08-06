@@ -50,7 +50,7 @@ class CreateLink extends Component {
 					/>
 				</div>
 				<div className="col-12">
-					<Mutation mutation={POST_MUTATION} variables={{ description, url }}>
+					<Mutation mutation={POST_MUTATION} variables={{ description, url }} onCompleted={() => this.props.history.push('/')}>
 						{postMutation => (
 							<button type="button" className="btn btn-primary btn-block" onClick={postMutation} style={field}>
 								Submit

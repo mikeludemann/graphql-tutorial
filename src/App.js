@@ -1,15 +1,24 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
 import ListQuery from './components/ListQuery';
 import CreateLink from './components/CreateLink';
+import RouteHeader from './components/RouteHeader';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <RouteHeader/>
+        <div>
+          <Switch>
+            <Route exact path="/" component={List} />
+            <Route exact path="/create" component={CreateLink} />
+          </Switch>
+        </div>
       </header>
       <section className="content">
         <h2>Normal List</h2>
